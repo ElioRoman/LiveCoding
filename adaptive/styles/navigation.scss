@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  .search {
+    display: flex;
+
+    &_filter,
+    &__sort {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    &_filter {
+      padding-right: 20px;
+    }
+
+    select {
+      border: none;
+      background-color: #f6f6f6;
+      width: 100px;
+      font-weight: 700;
+    }
+
+    label {
+      font-size: 12px;
+
+      line-height: 2em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 400px) {
+      .navigation {
+        flex-direction: column;
+      }
+    }
+  }
+}

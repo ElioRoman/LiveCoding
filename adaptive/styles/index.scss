@@ -1,0 +1,23 @@
+@import 'navigation';
+@import 'products';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 95%;
+  background-color: #f6f6f6;
+  font-family: 'Karla', sans-serif;
+}
+
+h6 {
+  margin: 0;
+  color: #666;
+}
+
+h5 {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
