@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./App";
+// eslint-disable-next-line import/no-unresolved
+import Auth from "./Auth";
 
 const rootElement = document.querySelector("#root");
 
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render( <Auth />, rootElement);
