@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-// eslint-disable-next-line import/no-unresolved
-import UsersList from './UsersList';
+import UsersList from './UsersList.jsx';
 
 const rootElement = document.querySelector('#root');
 
