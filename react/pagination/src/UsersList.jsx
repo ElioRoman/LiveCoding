@@ -29,7 +29,7 @@ class UsersList extends React.Component {
     const { currentPage, usersPerPage } = this.state;
 
     const start = (currentPage - 1) * usersPerPage;
-    const usersToDiplay = users.slice(start, start + usersPerPage);
+    const usersToDisplay = users.slice(start, start + usersPerPage);
 
     return (
       <div>
@@ -40,9 +40,10 @@ class UsersList extends React.Component {
           totalItems={users.length}
           itemsPerPage={usersPerPage}
         />
+
         <ul className="users">
-          {usersToDiplay.map(user => (
-            <User key={user.id} {...user} />
+          {usersToDisplay.map(user => (
+            <User key={user.id} name={user.name} age={user.age} />
           ))}
         </ul>
       </div>
